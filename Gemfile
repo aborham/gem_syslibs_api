@@ -21,6 +21,10 @@ gem 'active_model_serializers'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'rack-cors'
 
+#production
+gem 'rails_12factor', group: :production
+
+
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
   # Use Factory Girl for generating random test data
