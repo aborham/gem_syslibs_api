@@ -9,13 +9,15 @@ This source code containg a webservice helps ruby developer to find if there Ope
 
 we have 2 endpoints
 
+this for testing the api
+
     /packages [GET]
 
-this for testing the api
+the main endpoint for retrieving the packages info if there
+
 
     /search [POST]
 
-the main endpoint for retrieving the packages info if there
 params [json object]
 
     {
@@ -55,7 +57,7 @@ response will be like this
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/saladin2002eg/gem_syslibs. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/saladin2002eg/gem_syslibs_api. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License
