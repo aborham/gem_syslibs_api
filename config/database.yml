@@ -22,9 +22,9 @@ test:
   password: password1
 
 
-#
-#production:
-#  <<: *default
-#  database: gem_syslibs_api_production
-#  username: gem_syslibs_api
-#  password: <%= ENV['GEM_SYSLIBS_API_DATABASE_PASSWORD'] %>
+
+production:
+  <<: *default
+  database: gem_syslibs_api_production
+  username: gem_syslibs_api
+  password: <%= ENV['GEM_SYSLIBS_API_DATABASE_PASSWORD'] %>
