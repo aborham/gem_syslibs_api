@@ -1,9 +1,8 @@
 class ApplicationController < ActionController::API
   include ActionController::Serialization
 
-  before_filter :add_allow_credentials_headers
+  before_action :add_allow_credentials_headers
 
-  respond_to :json, :html
 
   def default_serializer_options
     { root: false }
