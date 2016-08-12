@@ -1,6 +1,10 @@
 class Api::V1::PackagesController < ApplicationController
 
 
+  def index
+    render json: {message: "Hello!"}, status: :ok
+  end
+
   def search
     if params[:packages]
       @packages = Version.joins(:package).where("packages.name IN (?) AND versions.os = ?",params[:packages],params[:os])
