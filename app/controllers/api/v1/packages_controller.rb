@@ -7,6 +7,7 @@ class Api::V1::PackagesController < ApplicationController
 
   def search
     if params[:packages]
+
       @packages = Version.joins(:package).where("packages.name IN (?) AND versions.os = ?",params[:packages],params[:os])
      if @packages.count > 0
        render json: @packages, status: :ok
